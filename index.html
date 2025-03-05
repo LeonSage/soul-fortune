@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日运势预测</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ 每日运势预测 ✨</h1>
+        <div class="birthday-section">
+            <h2>请输入您的生日</h2>
+            <input type="date" id="birthday" class="birthday-input">
+            <button id="saveBirthday" class="btn">保存生日</button>
+        </div>
+        <div class="fortune-section">
+            <h2>今日运势</h2>
+            <button id="generateFortune" class="btn generate-btn">生成今日运势</button>
+            <div class="fortune-card" id="fortuneCard">
+                <div class="fortune-item">
+                    <span class="label">综合运势：</span>
+                    <span id="overall" class="value"></span>
+                </div>
+                <div class="fortune-item">
+                    <span class="label">爱情运势：</span>
+                    <span id="love" class="value"></span>
+                </div>
+                <div class="fortune-item">
+                    <span class="label">事业运势：</span>
+                    <span id="career" class="value"></span>
+                </div>
+                <div class="fortune-item">
+                    <span class="label">财运：</span>
+                    <span id="wealth" class="value"></span>
+                </div>
+                <div class="fortune-item">
+                    <span class="label">健康运势：</span>
+                    <span id="health" class="value"></span>
+                </div>
+                <div class="brand-logo">
+                    <img src="logo.svg" alt="灵魂绘姬" class="logo-image">
+                    <span class="brand-name">灵魂绘姬</span>
+                </div>
+            </div>
+            <button id="shareButton" class="btn share-btn" style="display: none;">保存运势图片</button>
+        </div>
+    </div>
+    <canvas id="shareCanvas" style="display: none;"></canvas>
+    <audio id="fortuneSound" src="https://assets.mixkit.co/active_storage/sfx/2013/2013-preview.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html> 
