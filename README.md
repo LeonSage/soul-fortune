@@ -31,7 +31,7 @@
 
 ## 在线预览
 
-[点击这里预览](https://你的GitHub用户名.github.io/项目名)
+[点击这里预览](https://leonsage.github.io/soul-fortune)
 
 ## 本地运行
 
